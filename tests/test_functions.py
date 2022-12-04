@@ -2,7 +2,7 @@
 """
 Simple functions tested with pytests.
 """
-from examples.arithmetic import add
+from examples.arithmetic import add, subtract
 
 
 def test_add():
@@ -11,3 +11,11 @@ def test_add():
     """
     answer = add(5, 5)
     assert answer == 10
+
+
+def test_subtract():
+    """
+    Testing subtraction function.
+    """
+    answer = subtract(5, 5)
+    assert answer == 0
